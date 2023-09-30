@@ -1,0 +1,74 @@
+История команд в терминале ubuntu
+
+// Создание файла
+denis@my-pc:~$ cat > pets
+
+//Заполнение файла
+dog Jack give a paw 06.2000
+cat Masya purr 10.2013
+hamster Hapun gnaw 09.2022
+dog Umka bark 04.2018
+cat Barsik eat 07.2020
+hamster Gruzun sniff 09.2021
+
+//Создание файла
+denis@my-pc:~$ cat > pack_animals
+
+//Заполнение файла
+horse Maeck gallop 05.2017
+camel Galiaf spit 03.2010
+donkey Ia think 06.2015
+horse Rucheek quietly 06.2015
+camel Gans chew 02.2010
+donkey Iosif bray 02.2011
+denis@my-pc:~$
+
+//Объединение файлов
+denis@my-pc:~$ cat pets pack_animals > animals
+
+//Просмотр файла
+denis@my-pc:~$ cat animals
+dog Jack give a paw 06.2000
+cat Masya purr 10.2013
+hamster Hapun gnaw 09.2022
+dog Umka bark 04.2018
+cat Barsik eat 07.2020
+hamster Gruzun sniff 09.2021
+horse Maeck gallop 05.2017
+camel Galiaf spit 03.2010
+donkey Ia think 06.2015
+horse Rucheek quietly 06.2015
+camel Gans chew 02.2010
+donkey Iosif bray 02.2011
+
+//Переименование файла
+denis@my-pc:~$ mv animals human_friends
+
+denis@my-pc:~$ cat human_friends
+dog Jack give a paw 06.2000
+cat Masya purr 10.2013
+hamster Hapun gnaw 09.2022
+dog Umka bark 04.2018
+cat Barsik eat 07.2020
+hamster Gruzun sniff 09.2021
+horse Maeck gallop 05.2017
+camel Galiaf spit 03.2010
+donkey Ia think 06.2015
+horse Rucheek quietly 06.2015
+camel Gans chew 02.2010
+donkey Iosif bray 02.2011
+
+//Создание директории
+denis@my-pc:~$ mkdir animals
+denis@my-pc:~$ ls -l
+итого 90604
+drwxrwxr-x 3 denis      denis           4096 мая 30 17:40  1
+drwxrwxr-x 2 denis      denis           4096 сен 30 18:00  animals
+
+//Перемещение файла
+denis@my-pc:~$ mv human_friends animals
+denis@my-pc:~$ cd animals
+denis@my-pc:~/animals$ ls -l
+итого 4
+-rw-rw-r-- 1 denis denis 309 сен 30 17:54 human_friends
+denis@my-pc:~/animals$
