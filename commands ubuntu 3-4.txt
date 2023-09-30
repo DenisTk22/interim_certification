@@ -1,0 +1,40 @@
+//Подключение репозитория MySQL
+
+denis@my-pc:~$ sudo mysql
+[sudo] пароль для denis:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.34-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+//Проверка статуса
+denis@my-pc:~$ systemctl status mysql
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2023-09-30 17:32:43 MSK; 1h 24min ago
+   Main PID: 842 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 2262)
+     Memory: 106.4M
+        CPU: 41.274s
+     CGroup: /system.slice/mysql.service
+             └─842 /usr/sbin/mysqld
+
+сен 30 17:32:38 my-pc systemd[1]: Starting MySQL Community Server...
+сен 30 17:32:43 my-pc systemd[1]: Started MySQL Community Server.
+
+// Установка пакета
+denis@my-pc:~$ sudo dpkg -i ~/Загрузки/mysql-connector-python-py3_8.1.0-1ubuntu23.04_amd64.deb
+
+// Удаление пакета 
+
+denis@my-pc:~$ sudo dpkg -r mysql-connector-python-py3
+denis@my-pc:~$ sudo apt autoremove
+
