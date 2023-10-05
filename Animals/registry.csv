@@ -1,0 +1,6 @@
+
+Id: 2, Name: cat1, datebirth: 2019-02-01, animalType: Pet, commands: кот не выполняет команды
+Id: 3, Name: dog1, datebirth: 2019-12-05, animalType: Pet, commands: gav
+Id: 4, Name: Homa, datebirth: 2023-12-02, animalType: Pet, commands: хомяк не выполняет команды
+Id: 5, Name: Osel, datebirth: 2020-12-02, animalType: Pack Animal, commands: beg
+Id: 6, Name: Camel, datebirth: 2011-02-02, animalType: Pack Animal, commands: galop
